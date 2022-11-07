@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>SignUp</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script type = "text/javascript" src="/js/signupvalid.js"></script> 
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-box">
+                <form class="form-signup" form name="RegForm" id="createAccount" method="post" action="php/signup.php" onsubmit="return valid()">
+                    <h1 class="form-title">SignUp</h1>
+                        <input type="fname" name="fn" class="form-input" autofocus placeholder="First name">
+                        <input type="lname" name="ln" class="form-input" autofocus placeholder="Last name">
+                        <input type="text" name="un" id="signupUsername" class="form-input" autofocus placeholder="Username">
+                        <input type="text" name="email" class="form-input" autofocus placeholder="Email Address">
+                        <input type="password" name="pass" class="form-input" autofocus placeholder="Password">
+                        <input type="password" name="cpass" class="form-input" autofocus placeholder="Confirm password">
+                        <input type="radio" class="Gender" name="gen" value="Male">Male
+                        <input type="radio" class ="Gender" name="gen" value="Female">Female
+                        <input type="radio" class ="Gender" name="gen" value="Others">Others
+                        <input type="number text" name="phno" class="form-input" autofocus placeholder="Mobile number"  maxlength="10">
+                        <button class="submit" type="submit">SignUp</button>
+                        <p class="form-text">
+                            <a class="form-link" href="login.html" id="linkLogin">Already have an account? Sign in</a>
+                        </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
